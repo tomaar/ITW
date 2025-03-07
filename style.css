@@ -1,26 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin-left: 20%;
-    margin-right: 20%;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+a {
+    white-space: nowrap;
 }
 
 nav {
-    width: 100%;
+    width: auto;
+    align-content: flex-start;
 }
 
 nav ul {
-    justify-content: space-between;
     display: flex;
+    gap: 20px;
     list-style-type: none;
 }
 
 nav a {
     text-decoration: none;
-    {/*color: white; TODO*/}
     position: relative;
+    color: white;
 }
 
 nav a::after {
@@ -37,32 +43,38 @@ nav a:hover::after {
 }
 
 h1 {
+    padding: 20px;
     font-size: 2em;
     font-style: italic;
+    color: #b15e23;
 }
 
 h1 a {
     font-size: 1.5em;
     display: block;
+    text-decoration: none;
+    color: white;
 }
 
 .headerBg {
     background: #3c1f0a;
 }
 
-.genericSection article {
-    border-bottom: 1px dotted;
-}
-
-#aboutSub {
-    background: #656565;
+.introSection {
+    background: linear-gradient(to bottom, white, #dadada);
+    padding-bottom: 20px;
 }
 
 .linkSection dl {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+    width: 40%;
+}
+
+.linkSection dt, .linkSection dd {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .resultsTable {
@@ -96,4 +108,54 @@ h1 a {
 .linkSection {
     background: #3c1f0a;
     width: 100%;
+}
+
+h1, nav {
+    margin: 0 20%;
+}
+
+section {
+    margin: 0 20%;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #b15e23;
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.genericSection article h3 {
+    border-bottom: 1px dotted #b15e23;
+}
+
+.linkSection {
+    padding-top: 10px;
+}
+
+.linkSection h2, dt {
+    color: white;
+}
+
+.linkSection dd a {
+    text-decoration: none;
+    color: #d5a17c;
+}
+
+.linkSection ul li a {
+    text-decoration: none;
+    color: #d5a17c;
+}
+
+.linkSection ul li {
+    list-style-type: none;
+}
+
+.linkSection ul li::before {
+    content: url('assets/ui/footer_list_bullet.gif');
+    position: relative;
+    left: -20px;
 }
