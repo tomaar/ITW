@@ -6,164 +6,171 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">
-        <a href="#title">ITW</a>
-        tvorba webových stránek
-    </h1>
+    <div class="headerBg">
+        <h1 id="title">
+            <a href="#title">ITW</a>
+            Tvorba webových stránek
+        </h1>
 
-    <nav>
-        <ul>
-            <li><a href="#sub1">O předmětu</a></li>
-            <li><a href="#sub2">Přednášky</a></li>
-            <li><a href="#sub3">Přehled výsledků</a></li>
-            <li><a href="#sub4">Cvičení</a></li>
-            <li><a href="#sub5">Kontaktujte nás</a></li>
-            <li><a href="#sub6">Související předměty</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#aboutSub">O předmětu</a></li>
+                <li><a href="#sub2">Přednášky</a></li>
+                <li><a href="#sub3">Přehled výsledků</a></li>
+                <li><a href="#sub4">Cvičení</a></li>
+                <li><a href="#sub5">Kontaktujte nás</a></li>
+                <li><a href="#sub6">Související předměty</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <section id="sub1">
-        <h2>O předmětu ITW - tvorba webových stránek</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <em>Cras interdum consequat sagittis.</em> Maecenas metus massa, rhoncus id dapibus et,
-            consectetur eget nibh. Suspendisse commodo tincidunt est, vel fermentum purus suscipit vitae.
-            <em>Praesent sit amet convallis erat, at tristique nunc.</em>
-            Aenean metus ipsum, vehicula in nulla ornare, efficitur volutpat leo.
-            Quisque scelerisque ipsum eu orci semper, ultricies accumsan sapien rhoncus.
-            Nulla vitae viverra justo.
-        </p>
-    </section>
+    <div class="introSection">
+        <section id="aboutSub">
+            <h2>O předmětu ITW - tvorba webových stránek</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <em>Cras interdum consequat sagittis.</em> Maecenas metus massa, rhoncus id dapibus et,
+                consectetur eget nibh. Suspendisse commodo tincidunt est, vel fermentum purus suscipit vitae.
+                <em>Praesent sit amet convallis erat, at tristique nunc.</em>
+                Aenean metus ipsum, vehicula in nulla ornare, efficitur volutpat leo.
+                Quisque scelerisque ipsum eu orci semper, ultricies accumsan sapien rhoncus.
+                Nulla vitae viverra justo.
+            </p>
+        </section>
+    </div>
+
+    <div class="genericSection">
+        <section id="sub2">
+            <h2>Přednášky</h2>
+            <article>
+                <img src="assets/img/icon1.gif" alt="Přednáška 1">
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p01.pdf">Internet a služba WWW, principy, adresování, umístění dokumentů</a></h3>
+                <p>Webové prezentace: výkladní skříň firmy (organizace, ...)
+                    Webdesign: návrh a realizace webové prezentace</p>
+            </article>
+            <article>
+                <img src="assets/img/icon2.gif" alt="Přednáška 2">
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p02.pdf">Základy jazyka HTML</a></h3>
+                <p>Klasické programovací jazyky - převládá struktuovaný text
+                    (programový kód), obecný text se vyskytuje ve formě
+                    řetězců
+                </p>
+            </article>
+            <article>
+                <img src="assets/img/icon3.gif" alt="Přednáška 3">
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p03.pdf">Úvod do kaskádových stylů (CSS)</a></h3>
+                <p>Původní stav:
+                    Specifikace vizuální prezentace společně s obsahem v HTML kódu
+                </p>
+            </article>
+            <article>
+                <img src="assets/img/icon4.gif" alt="Přednáška 4">
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p04.pdf">CSS – základní principy: kaskáda a dědičnost</a></h3>
+                <p>Tři možnosti připojení stylů:
+                    1. Externí stylesheet (nejběžnější)
+                    2. Deklarace v hlavičce dokumentu
+                    3. Inline styly
+                </p>
+            </article>
+        </section>
+
+        <section id="sub3">
+            <h2>Přehled výsledků</h2>
+            <table class="resultsTable">
+                <tr>
+                    <td rowspan="3">Jméno</td>
+                    <td colspan="6">Body</td>
+                </tr>
+                <tr>
+                    <td colspan="2">2010</td>
+                    <td colspan="2">2011</td>
+                    <td colspan="2">2012</td>
+                </tr>
+                <tr>
+                    <td>Půlsem.</td>
+                    <td>Zk.</td>
+                    <td>Půlsem.</td>
+                    <td>Zk.</td>
+                    <td>Půlsem.</td>
+                    <td>Zk.</td>
+                </tr>
+                <tr class="resultsTableData">
+                    <td class="resultsTableName">Jan Novák</td>
+                    <td>18</td>
+                    <td>72</td>
+                    <td>20</td>
+                    <td>80</td>
+                    <td>10</td>
+                    <td>-</td>
+                </tr>
+                <tr class="resultsTableData">
+                    <td class="resultsTableName">Zuzana Černá</td>
+                    <td>10</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>75</td>
+                    <td>25</td>
+                    <td>99</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="sub4">
+            <h2>Cvičení</h2>
+            <article>
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c1">Cvičení 1</a></h3>
+                <p> Cvičení 1 - DNS a HTTP
+                </p>
+            </article>
+            <article>
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c2">Cvičení 2</a></h3>
+                <p> Cvičení 2 - Jazyk HTML
+                </p>
+            </article>
+            <article>
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c3">Cvičení 3</a></h3>
+                <p> Cvičení 3 - Styl textu
+                </p>
+            </article>
+            <article>
+                <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c4">Cvičení 4</a></h3>
+                <p> Cvičení 4 - CSS rozložení stránky
+                </p>
+            </article>
+        </section>
+    </div>
 
 
-    <section id="sub2">
-        <h2>Přednášky</h2>
-        <article>
-            <img src="assets/img/icon1.gif" alt="Přednáška 1">
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p01.pdf">Internet a služba WWW, principy, adresování, umístění dokumentů</a></h3>
-            <p>Webové prezentace: výkladní skříň firmy (organizace, ...)
-                Webdesign: návrh a realizace webové prezentace</p>
-        </article>
-        <article>
-            <img src="assets/img/icon2.gif" alt="Přednáška 2">
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p02.pdf">Základy jazyka HTML</a></h3>
-            <p>Klasické programovací jazyky - převládá struktuovaný text
-                (programový kód), obecný text se vyskytuje ve formě
-                řetězců
-            </p>
-        </article>
-        <article>
-            <img src="assets/img/icon3.gif" alt="Přednáška 3">
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p03.pdf">Úvod do kaskádových stylů (CSS)</a></h3>
-            <p>Původní stav:
-                Specifikace vizuální prezentace společně s obsahem v HTML kódu
-            </p>
-        </article>
-        <article>
-            <img src="assets/img/icon4.gif" alt="Přednáška 4">
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/prednasky/itw_p04.pdf">CSS – základní principy: kaskáda a dědičnost</a></h3>
-            <p>Tři možnosti připojení stylů:
-                1. Externí stylesheet (nejběžnější)
-                2. Deklarace v hlavičce dokumentu
-                3. Inline styly
-            </p>
-        </article>
-    </section>
 
-    <section id="sub3">
-        <h2>Přehled výsledků</h2>
-        <table>
-            <tr>
-                <td rowspan="3">Jméno</td>
-                <td colspan="6">Body</td>
-            </tr>
-            <tr>
-                <td colspan="2">2010</td>
-                <td colspan="2">2011</td>
-                <td colspan="2">2012</td>
-            </tr>
-            <tr>
-                <td>Půlsem.</td>
-                <td>Zk.</td>
-                <td>Půlsem.</td>
-                <td>Zk.</td>
-                <td>Půlsem.</td>
-                <td>Zk.</td>
-            </tr>
-            <tr>
-                <td>Jan Novák</td>
-                <td>18</td>
-                <td>72</td>
-                <td>20</td>
-                <td>80</td>
-                <td>10</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>Zuzana Černá</td>
-                <td>10</td>
-                <td>50</td>
-                <td>20</td>
-                <td>75</td>
-                <td>25</td>
-                <td>99</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="sub4">
-        <h2>Cvičení</h2>
-        <article>
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c1">Cvičení 1</a></h3>
-            <p> Cvičení 1 - DNS a HTTP
-            </p>
-        </article>
-        <article>
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c2">Cvičení 2</a></h3>
-            <p> Cvičení 2 - Jazyk HTML
-            </p>
-        </article>
-        <article>
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c3">Cvičení 3</a></h3>
-            <p> Cvičení 3 - Styl textu
-            </p>
-        </article>
-        <article>
-            <h3><a href="https://www.fit.vut.cz/study/course/ITW/private/cviceni/#c4">Cvičení 4</a></h3>
-            <p> Cvičení 4 - CSS rozložení stránky
-            </p>
-        </article>
-    </section>
-
-    <section id="sub5">
-        <h2>Kontaktujte nás</h2>
-        <dl>
-            <dt>Garant:</dt>
-            <dd>
+    <div class="linkSection">
+        <section id="sub5">
+            <h2>Kontaktujte nás</h2>
+            <dl>
+                <dt>Garant:</dt>
+                <dd>
                     <a href="mailto:itw-garant@fit.vutbr.cz">itw-garant@fit.vutbr.cz</a>
-            </dd>
-            <dt>Přednášející:</dt>
-            <dd>
+                </dd>
+                <dt>Přednášející:</dt>
+                <dd>
                     <a href="mailto:itw-prednasejici@fit.vutbr.cz">itw-prednasejici@fit.vutbr.cz</a>
-            </dd>
-            <dt>Cvičící:</dt>
-            <dd>
+                </dd>
+                <dt>Cvičící:</dt>
+                <dd>
                     <a href="mailto:itw-cvicici@fit.vutbr.cz">itw-cvicici@fit.vutbr.cz</a>
-            </dd>
-        </dl>
-    </section>
+                </dd>
+            </dl>
+        </section>
 
-    <section id="sub6">
-        <h2>Související předměty</h2>
-        <ul>
-            <li><a href="https://www.fit.vut.cz/study/course/IIS/.cs">IIS</a></li>
-            <li><a href="https://www.fit.vut.cz/study/course/PIS/.cs">PIS</a></li>
-            <li><a href="https://www.fit.vut.cz/study/course/280960/.cs">AIS</a></li>
-            <li><a href="https://www.fit.vut.cz/study/course/281092/.cs">ISJ</a></li>
-        </ul>
-
-
-    </section>
+        <section id="sub6">
+            <h2>Související předměty</h2>
+            <ul>
+                <li><a href="https://www.fit.vut.cz/study/course/IIS/.cs">IIS</a></li>
+                <li><a href="https://www.fit.vut.cz/study/course/PIS/.cs">PIS</a></li>
+                <li><a href="https://www.fit.vut.cz/study/course/280960/.cs">AIS</a></li>
+                <li><a href="https://www.fit.vut.cz/study/course/281092/.cs">ISJ</a></li>
+            </ul>
+        </section>
+    </div>
 
 </body>
 </html>
