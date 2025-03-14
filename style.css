@@ -72,17 +72,12 @@ h1 a {
     width: 40%;
 }
 
-.linkSection dt, .linkSection dd {
-    display: inline-block;
-    margin-right: 10px;
-}
-
 .resultsTable {
     border: 3px solid #000000;
     border-spacing: 5px;
     border-collapse: separate;
     text-align: center;
-    width: 70%;
+    width: 100%;
 }
 
 .resultsTable td {
@@ -105,17 +100,8 @@ h1 a {
     border-bottom: 2px solid #656565;
 }
 
-.linkSection {
-    background: #3c1f0a;
-    width: 100%;
-}
-
-h1, nav {
-    margin: 0 20%;
-}
-
-section {
-    margin: 0 20%;
+h1, nav, section {
+    margin: 0 0;
 }
 
 h2 {
@@ -128,12 +114,33 @@ h3 a {
     color: black;
 }
 
-.genericSection article h3 {
+#sub2 article h3 {
     border-bottom: 1px dotted #b15e23;
 }
 
-.linkSection {
-    padding-top: 10px;
+.exerciseContent {
+    border-bottom: 1px dotted #b15e23;
+}
+
+#sub4 article {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "div div";
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+#sub4 article h3 {
+    grid-area: header;
+}
+
+#sub4 article div {
+    grid-area: div;
+}
+
+#sub4 article div {
+    display: flex;
 }
 
 .linkSection h2, dt {
@@ -143,6 +150,10 @@ h3 a {
 .linkSection dd a {
     text-decoration: none;
     color: #d5a17c;
+}
+
+.linkSection ul {
+    margin: 0;
 }
 
 .linkSection ul li a {
@@ -158,4 +169,61 @@ h3 a {
     content: url('assets/ui/footer_list_bullet.gif');
     position: relative;
     left: -20px;
+}
+
+.lectures {
+    display: flex;
+    flex-wrap: wrap;
+    columns: 2;
+}
+
+.lectures article {
+    flex: 1 1 50%;
+    display: grid;
+    grid-template-areas:
+        "image header"
+        "image text";
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.lectures article img {
+    grid-area: image;
+}
+
+.lectures a {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.genericSection {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.bodyLeft {
+    flex: 6;
+    padding: 20px;
+}
+
+.bodyRight {
+    flex: 5;
+    background: linear-gradient(to left, white, #dadada);
+    padding: 20px;
+}
+
+.linkSection {
+    background: #3c1f0a;
+}
+
+.linkSectionContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linkSectionContent, .introSection section, .headerBg h1, .headerBg nav {
+    width: 960px;
+    margin: 0 auto;
 }
